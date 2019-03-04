@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
+  <style>
+    .demo{
+      display: flex;
+      flex-direction: column;
+    }
+    .demo div{
+      flex:1;
+      box-sizing: border-box;
+      border: solid #b3d7ff 2px;
+    }
+    .main{
+      display: flex;
+    }
+    .main section:nth-child(n+1){
+      border-left:solid #b3d7ff 2px;
+      display: flex;
+      align-items: center;
+    }
+    .main section{
+      height: 500px;
+      justify-content:center;
+    }
+    .content{
+      flex:0 0 60%!important;
+    }
+    .header,.left,.right,.footer{
+      flex:0 0 20%!important;
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="demo">
+    <div class="header">HEADER</div>
+    <div class="main">
+      <section class="left">LEFT</section>
+      <section class="content">圣杯布局</section>
+      <section class="right">RIGHT</section>
+    </div>
+    <div class="footer">FOOTER</div>
+  </div>
+
+
+</body>
+</html>
